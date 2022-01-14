@@ -1,3 +1,6 @@
+# 프로그래머스 고득점 Kit _ Stack & Queue 1번문제
+
+
 def solution(progresses, speeds):                   # solution 이라는 함수 이름
     answer = []                                     # return받을 answer 의 빈 리스트 생성
     
@@ -38,4 +41,7 @@ def solution(progresses, speeds):                   # solution 이라는 함수 
 
 - 다른 좋은 풀이중 많이 칭찬을 받은 코드중에 zip, ceil, lambda를 쓴 코드가 있었는데 함수에 대해서만 훑어보았다.
 
+
+
+# 참고한 문제 링크 - https://programmers.co.kr/learn/courses/30/lessons/42586
 """
