@@ -1,5 +1,6 @@
 # 프로그래머스 고득점 Kit _ Stack & Queue 2번문제
 
+
 def solution(priorities, location):
     answer = 0
    
@@ -16,6 +17,7 @@ def solution(priorities, location):
                 
                 
 """
+
 이 코드를 가져온 이유는 여러 해답을 찾아본 코드 중 글쓴이와 가장 비슷하게 풀이했고 때문
 
 1) 내가 이끌어 낸 지점 : 
@@ -34,7 +36,8 @@ def solution(priorities, location):
 
 
 
-참고한 문제 링크 : https://programmers.co.kr/learn/courses/30/lessons/42587
+ # 참고한 문제 링크 : https://programmers.co.kr/learn/courses/30/lessons/42587
+ 
 """
 
 
