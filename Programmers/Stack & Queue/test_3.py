@@ -32,7 +32,7 @@ def solution(bridge_length, weight, truck_weights):                 # 다리위 
   - 뭔가 앞에 풀어보았던 1,2번 문제와 느낌이 비슷하여 어렵지는 않았다. 하나씩 추가되는 사항이 있는데 그 부분을 잘 보완하면 좋아질 것 같다.
   
   
-  # 참고한 문제 링크 - https://programmers.co.kr/learn/courses/30/lessons/42583
+  # 프로그래머스 문제 링크 - https://programmers.co.kr/learn/courses/30/lessons/42583
   
   """
   
