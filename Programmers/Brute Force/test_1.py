@@ -37,5 +37,6 @@ def solution(answers):
 - 새롭게 배열을 추가하여 자유롭게 활용하지 못한 점.
 - ans = answers[i] 이렇게 활용하는 점도 생각해내지 못함.
 
-  
+# 프로그래머스 문제 링크 : https://programmers.co.kr/learn/courses/30/lessons/42840
+
   """
