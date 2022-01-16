@@ -36,7 +36,7 @@ def solution(priorities, location):
 
 
 
- # 참고한 문제 링크 : https://programmers.co.kr/learn/courses/30/lessons/42587
+ # 프로그래머스 문제 링크 : https://programmers.co.kr/learn/courses/30/lessons/42587
  
 """
 
