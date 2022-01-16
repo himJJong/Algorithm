@@ -1,3 +1,6 @@
+ # 프로그래머스 고득점 Kit _ Sort 1번문제 
+
+
 def solution(array, commands):      
     answer = []
       
@@ -15,5 +18,12 @@ def solution(array, commands):
     
  
 """
-1) 
+1) 내가 이끌어 낸 지점 :
+
+- 문제 그대로 주어지는 변수에 대한 값 출력을 어떻게 해야할지 배열로 만들었고
+
+- 새롭게 하나의 배열을 추가하여 풀어냈다.
+
+# 프로그래머스 문제 링크 - https://programmers.co.kr/learn/courses/30/lessons/42748
+
 """
