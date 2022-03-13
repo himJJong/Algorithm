@@ -1,4 +1,3 @@
 # Algorithm
 
-Study for coding test
-(Using python and java)
+Study for coding test(Java) => I only wrote the code that came out of my head.
