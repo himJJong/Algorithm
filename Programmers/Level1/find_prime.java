@@ -31,3 +31,19 @@ class Solution {
           return answer;
       }
 }
+
+
+//좋은 방법 2 
+// 자기 자신과 숫자 1인 소수로 숫자 판별.
+
+ for(int i = 1 ; i <= n ; i++){
+            for(int j = 1 ; j <= i ; j++){
+                if ( i % j == 0) count++;
+            }
+            if(count == 2) result++;
+            count = 0;
+        }
+
+        return result;
+    }
+
