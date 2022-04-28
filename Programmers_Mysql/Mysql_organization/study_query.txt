@@ -1,0 +1,17 @@
+문법작성 순서
+
+1) SELECT 컬럼명 
+2) FROM 테이블명 
+3) WHERE 
+4) GROUP BY 
+5) Having 
+6) ORDER BY
+
+실행작동 순서
+
+1) FROM - 조회 테이블을 확인
+2) WHERE - 데이터 추출 조건 확인
+3) GROUP BY - 컬럼 그룹화
+4) Having - 그룹화 조건 확인
+5) SELECT - 데이터 추출
+6) ORDER BY - 데이터 순서 정렬
