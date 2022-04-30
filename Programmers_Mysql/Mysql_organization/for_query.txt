@@ -15,3 +15,8 @@ LIKE '_a%'   // 두번째 자리에 a가 들어가는 모든 것
 4) <> == !=
 
 5) LIMIT -> 데이터를 뽑아 올 때 개수 선정 가능
+
+6) SELECT COUNT(*)
+-> count 개수 셀 수 있음
+
+7) SELECT(조회) , COUNT(수량 세기), GROUP BY(그룹으로 묶기)
