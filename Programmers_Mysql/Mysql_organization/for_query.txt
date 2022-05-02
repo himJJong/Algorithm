@@ -25,3 +25,6 @@ LIKE '_a%'   // 두번째 자리에 a가 들어가는 모든 것
 7) SELECT(조회) , COUNT(수량 세기), GROUP BY(그룹으로 묶기)
 
 8) GROUP으로 묶은 후에는 GROUP에 조건을 줄때는 WHERE절이 아니라 HAVING절을 사용하게 됩니다.
+
+9) 중복 데이터를 제거하고자 하는 열은 NAME 이므로, 옆에 DISTINCT 키워드를 붙입니다.
+   NULL 값이 아닌 것을 비교하는 방법은 IS NOT NULL 을 붙입니다.
