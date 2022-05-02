@@ -24,3 +24,4 @@ LIKE '_a%'   // 두번째 자리에 a가 들어가는 모든 것
 
 7) SELECT(조회) , COUNT(수량 세기), GROUP BY(그룹으로 묶기)
 
+8) GROUP으로 묶은 후에는 GROUP에 조건을 줄때는 WHERE절이 아니라 HAVING절을 사용하게 됩니다.
