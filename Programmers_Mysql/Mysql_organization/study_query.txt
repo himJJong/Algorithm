@@ -23,3 +23,11 @@ Join
 
 on 조건은 join 을 하기 전에 필터링 되는 기준
 WHERE 조건은 JOIN을 한 이후에 필터링하는 기준
+
+UNION (DISTINCT)
+
+쿼리의 결과를 합친다. 중복된 ROW는 제거 
+
+UNION ALL   
+
+모든 컬럼값이 같은 ROW도 결과로 보여준다. 중복제거 하지 않는다.
