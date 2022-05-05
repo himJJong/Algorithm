@@ -15,3 +15,8 @@
 4) Having - 그룹화 조건 확인
 5) SELECT - 데이터 추출
 6) ORDER BY - 데이터 순서 정렬
+
+Join
+
+1) 어느것을 기준으로 잡든 상관 x
+2) 왠만하면 LEFT JOIN을 사용
