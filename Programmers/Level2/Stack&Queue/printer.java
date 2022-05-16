@@ -1,4 +1,4 @@
-//(20/100) 배열로 풀었을 때 결과값은 맞지만, 스택과 큐를 이용해야 하기 때문에 MB가 많이 차지. 
+//(20/100) 배열로 풀었을 때 
 package algorithm;
 
 import java.util.Arrays;		//필요한 것 Import
