@@ -51,5 +51,32 @@ public class Test {
 	}
 }
 
-// 큐를 이용한 풀이
+// 우선순위큐를 이용한 풀이
+
+import java.util.*;
+class Solution {
+    public int solution(int[] priorities, int location) {
+      
+		PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+		int answer = 0;
+		
+		for(int i=0; i<priorities.length ; i++) {
+			pq.add(priorities[i]);
+		}
+		
+		while(!pq.isEmpty()) {
+			for(int i=0; i<priorities.length;i++) {
+				if(priorities[i]==pq.peek()) {
+					if(i==location) {
+						answer++;
+						return answer;
+					}
+					pq.poll();
+					answer++;
+				}
+			}
+		}
+		return -1;
+	}
+}
 		
