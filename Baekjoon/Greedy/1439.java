@@ -57,3 +57,23 @@ public class Test {
 		System.out.println(result);
 }
 }
+
+//제일 좋았던 다른 사람 풀이
+// StringTokenizer로 0,1을 구분자로 사용 후 최솟값이 문제에서 원하는 return값
+package algorithm;
+
+import java.io.*;
+import java.util.*;
+
+
+public class Test {
+	public static void main(String[] args) throws IOException{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String s = br.readLine();
+		StringTokenizer st1 =new StringTokenizer(s,"0");
+		StringTokenizer st0 =new StringTokenizer(s,"1");
+		System.out.println(Math.min(st1.countTokens(),st0.countTokens()));
+	}
+}
+
+
