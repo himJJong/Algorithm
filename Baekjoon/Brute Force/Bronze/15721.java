@@ -1,3 +1,5 @@
+//배열을 쓰지않고 변수 값 증가만으로도 문제풀이 하는데 유용
+
 package algorithm;
 
 import java.io.*;
@@ -8,8 +10,8 @@ public class Test {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Scanner sc=new Scanner(System.in);
-		a=sc.nextInt(); // 전체 인원수 (0부터 a-1번 까지)
-		t=sc.nextInt(); // t번째 뻔/데기를 외치는 사람 구하기
+		a=sc.nextInt(); // 전체 인원
+		t=sc.nextInt(); // t번째 뻔,데기를 외치는 사람
 		k=sc.nextInt(); // 0->뻔, 1->데기
 		
 		System.out.println(solution());
