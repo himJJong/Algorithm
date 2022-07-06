@@ -20,12 +20,12 @@ public class Test {
 		M = Integer.parseInt(st.nextToken());
 		arr = new int[M];
  
-		dfs(1, 0);
+		dfs(0);
 		System.out.println(sb);
  
 	}
  
-	public static void dfs(int at, int depth) {
+	public static void dfs(int depth) {
  
 		if (depth == M) {
 			for (int val : arr) {
@@ -35,9 +35,9 @@ public class Test {
 			return;
 		}
  
-		for (int i = at; i <= N; i++) {
+		for (int i = 1; i <= N; i++) {
 			arr[depth] = i;
-			dfs(i, depth + 1);
+			dfs(depth + 1);
 		}
  
 	}
