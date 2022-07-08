@@ -10,21 +10,29 @@ public class Test {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
-		int[] data = new int[3];
-		
+		int[] data = new int[2];
+		int num = 0;
 		for(int i=0; i<data.length ;i++) {
 			data[i] = Integer.parseInt(st.nextToken());
 		}
 		
-		int val = data[1];
+		int[] place = new int[data[0]];
 		st = new StringTokenizer(br.readLine());
+		
 		while(st.hasMoreTokens()) {
-			if(Integer.parseInt(st.nextToken())==val) {
-				answer++;
-				val+=data[2];
+			place[num]=Integer.parseInt(st.nextToken());
+			num++;
+		}
+		Arrays.sort(place);
+		
+		double left = place[0] - 0.5;
+		int cnt =1;
+		for(int i=0; i<data[0]; i++) {
+			if(left+data[1]<place[i]) {
+				cnt++;
+				left=place[i]-0.5;
 			}
 		}
-		
-		System.out.println(answer);
+		System.out.println(cnt);
 	}
 }
