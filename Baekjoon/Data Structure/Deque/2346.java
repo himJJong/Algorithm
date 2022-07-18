@@ -1,7 +1,8 @@
 //ArrayDeque 
+package algorithm;
 import java.util.*;
 
-public class Main {
+public class plus {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         Deque<Integer> d = new ArrayDeque<>();
@@ -15,16 +16,16 @@ public class Main {
 
         int n = 0;
         for(int i = 0 ; i < N-1 ; i++){
-            System.out.print(d.poll() + " ");
-            if(a[n] > 0){
+            System.out.print(d.poll() + " ");	// 크기만큼 move 
+            if(a[n] > 0){	//앞에서 뒤로 움직여야할 때 
                 for(int j = 0 ; j < a[n]-1 ; j++)
                     d.addLast(d.pollFirst());
             }
-            else{
-                for(int j = a[n] ; j < 0 ; j++)
+            else{			//뒤에서 앞으로 움직여야 할 때 
+                for(int j = a[n] ; j < 0 ; j++) // 크기만큼 move 
                     d.addFirst(d.pollLast());
             }
-            n = d.peek()-1;
+            n = d.peek()-1;	 // 움직인 위치의 배열인덱스는 d.peek()-1
         }
         System.out.print(d.poll());
     }
