@@ -1,51 +1,62 @@
 package algorithm;
-import java.util.*;
-
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Stack;
+ 
 public class plus {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String in = scanner.next();
-
-        int mul = 1;
-        int result = 0;
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
+        String  N = br.readLine();
         Stack<Character> stack = new Stack<>();
-        for (int i = 0; i < in.length(); i++) {
-            switch (in.charAt(i)) {
-
-                case '(':
-                    stack.push('(');
-                    mul *= 2;
+        int result = 0;
+        int value = 1;
+ 
+        for(int i = 0; i < N.length(); i++) {
+            if(N.charAt(i) == '(') { 
+                stack.push(N.charAt(i)); 
+                value *= 2; //( : 2
+            } else if(N.charAt(i) == '[') {
+                stack.push(N.charAt(i)); 
+                value *= 3; //[ : 3
+                
+                
+            } else if(N.charAt(i) == ')') {
+            	
+                if(stack.isEmpty() || stack.peek() != '(') { 
+                    result = 0;
                     break;
-
-                case '[':
-                    stack.push('[');
-                    mul *= 3;
+                }
+                else if(N.charAt(i-1) == '(') {
+                	result += value;
+                
+                
+                }
+                stack.pop();
+                value /= 2;
+            } 
+            
+              else if(N.charAt(i) == ']') {
+            	
+                if (stack.isEmpty() || stack.peek() != '[') {
+                	System.out.println(stack.peek());
+        
+                    result = 0;
                     break;
-
-                case ')':
-                    if (stack.isEmpty() || stack.peek() != '(') {
-                        result = 0;
-                        break;
-                    }
-
-                    if (in.charAt(i - 1) == '(') result += mul;
-                    stack.pop();
-                    mul /= 2;
-                    break;
-
-                case ']':
-                    if (stack.isEmpty() || stack.peek() != '[') {
-                        result = 0;
-                        break;
-                    }
-
-                    if (in.charAt(i - 1) == '[') result += mul;
-                    stack.pop();
-                    mul /= 3;
-                    break;
+                } 
+                else if (N.charAt(i - 1) == '[') {
+                    result += value;
+                
+                
+                }
+                stack.pop();
+                value /= 3;
             }
         }
-
-        System.out.println(!stack.isEmpty() ? 0 : result);
+        
+        if(!stack.isEmpty()) sb.append(0).append("\n");
+        else sb.append(result).append("\n");
+        System.out.println(sb);
     }
 }
